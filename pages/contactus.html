@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-
-
     <title>Contact Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +14,22 @@
     <link rel="stylesheet" href="../css/jquery.beefup.css">
     <link rel=stylesheet href="../css/contactstyles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-
 </head>
-
 <body>
     <div id="contactWrapper">
         <div class="logo">
-            <img src="/images/LargerLogoBLACK%20copy.png" alt="">
+            <img src="../images/logo.png" alt="">
         </div>
         <nav class="nav">
             <ul>
-               <li><a href="/6_advanced_grid.html">Home</a></li>
-                <li><a href="/pages/Aboutme.html">About Me</a></li>
-                <li><a href="/pages/services.html">Services</a></li>
-                <li><a href="/pages/prices.html">Prices</a></li>
-                <li><a href="/pages/contactus.html">Contact</a></li>
+                <li><a href="../6_advanced_grid.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Prices</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="../pages/contactus.html">Contact</a></li>
             </ul>
         </nav>
-<!--Buttons-->
+        <!--Buttons-->
         <div class="button">
             <div class="navbuttons">
                 <button id="button">
@@ -44,22 +39,16 @@
                              &body=Please send me a copy of your new program!">Email Me</a></button>
             </div>
         </div>
-<!--END OF BUTTONS-->
-       
-<!--START OF HEADER--->
         <header>
             <h1 id="contactMe">Contact Us About Your Free Consultation!</h1>
         </header>
-<!--END OF HEADER--->
-       
-<!--Form-->
+        <!--Form-->
         <form action="" method="post">
             <fieldset id="fieldset">
                 <legend id="questions">For General Questions and Inquries</legend>
                 <div id="formGrid">
                     <p id="note"><em>Note: Fields highlighted in blue are required.</em></p>
                     <div class="label1">
-
                         <label>Name:</label>
                     </div>
                     <div class="input1">
@@ -142,7 +131,6 @@
                 </div>
             </fieldset>
         </form>
-
         <!--------------------------------------------------------->
         <!--------------------------------------------------------->
         <section id="myschedule">
@@ -151,124 +139,103 @@
                 <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=nak7m5420euo39elv1bd0u9u98%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="100%" height="650" frameborder="0" scrolling="no">
                 </iframe>
             </div>
-            <div class="responsive-iframe-container small-container">
-                <h2>My Schedule</h2>
-                <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=nak7m5420euo39elv1bd0u9u98%40group.calendar.google.com&amp;mode=AGENDA&amp;color=%23691426&amp;ctz=America%2FLos_Angeles" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no">
-                </iframe>
-            </div>
-            <!--*************************START POP UP*************************************** -->
-            <section id="test">
-                <button class="trigger">Click here to Schedule!</button>
-                <div class="modal">
-                    <div class="modal-content">
-                        <span class="close-button">&times;</span>
-                        <!--*************************START LABELS*************************************** -->
-                        <div class="label1">
-                            <p><strong>Schedule a workout with me!</strong></p>
-                            <hr>
-                            <p>Please let me know your name, phone number, preferred date, and time.</p>
-                            <hr>
-                            <label>Name:</label>
-                        </div>
-                        <div class="input1">
-                            <input type="text" name="name" maxlength="25" pattern="[a-zA-Z]*" required title="Use non-numeric characters only" required placeholder="First and Last Name">
-                        </div>
-                        <div class="label3">
-                            <label>Phone Number:</label>
-                        </div>
-                        <div class="input3">
-                            <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 777-777-7777" placeholder="777-777-7777">
-                        </div>
-                        <div class="label2">
-                            <label>DATE:</label>
-                        </div>
-                        <div class="input2">
-                            <input type="text" name="date" maxlength="30" required placeholder="MM/DD/YYYY">
-                        </div>
-                        <div class="label4">
-                            <label>Preferred Time:</label>
-                        </div>
-                        <div class="input4">
-                            <input type="text" name="time" maxlength="30" required placeholder="HH:mm am/pm">
-                        </div>
-                        <br>
-                        <div class="submitButton">
-                            <input type="button" value="Submit Form" onclick="showAlert();" />
-                        </div>
-                        <!-- *********************** END LABELS************************************** -->
-                    </div>
-                </div>
-            </section>
-            <!--*************************END POP UP*************************************** -->
         </section>
+        <!--*************************START POP UP*************************************** -->
+        <section id="test">
+            <button class="trigger">Click here to Schedule!</button>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <!--*************************START LABELS*************************************** -->
+                    <div class="label1">
+                        <p><strong>Schedule a workout with me!</strong></p>
+                        <hr>
+                        <p>Please let me know your name, phone number, preferred date, and time.</p>
+                        <hr>
+                        <label>Name:</label>
+                    </div>
+                    <div class="input1">
+                        <input type="text" name="name" maxlength="25" pattern="[a-zA-Z]*" required title="Use non-numeric characters only" required placeholder="First and Last Name">
+                    </div>
+                    <div class="label3">
+                        <label>Phone Number:</label>
+                    </div>
+                    <div class="input3">
+                        <input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required title="Ex: 777-777-7777" placeholder="777-777-7777">
+                    </div>
+                    <div class="label2">
+                        <label>DATE:</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" name="date" maxlength="30" required placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="label4">
+                        <label>Preferred Time:</label>
+                    </div>
+                    <div class="input4">
+                        <input type="text" name="time" maxlength="30" required placeholder="HH:mm am/pm">
+                    </div>
+                    <br>
+                    <div class="submitButton">
+                        <input type="button" value="Submit Form" onclick="showAlert();" />
+                    </div>
+                    <!-- *********************** END LABELS************************************** -->
+                </div>
+            </div>
+        </section>
+        <!--*************************END POP UP*************************************** -->
         <!--*************************END POP UP*************************************** -->
         <section id="contactInfo">
             <div class="mapouter">
                 <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="100%" height="70%" id="gmap_canvas" src="https://maps.google.com/maps?q=uSan%20Diego%20Outdoor%20Personal%20Trainer%2015870%20Camino%20San%20Bernardo%2C%20San%20Diego%2C%20CA%2092127niversity%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div>
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="245" id="gmap_canvas" src="https://maps.google.com/maps?q=San%20Diego%20Outdoor%20Personal%20Trainer%2015870%20Camino%20San%20Bernardo%2C%20San%20Diego%2C%20CA%2092127&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
         <!--------------------------------------------------------->
         <!--------------------------------------------------------->
         <!--------------------------------------------------------->
         <!--------------------------------------------------------->
         <!--------------------------------------------------------->
         <main id="FAQ">
-
             <article id="FAQ" class="beefup example-selfclose">
-                <h4 class="beefup__head">
+                <h3 class="beefup__head">
                     FAQ
-                </h4>
-
+                </h3>
                 <div class="beefup__body">
-
-                    <p>Do I need to have equipment if I am going to be working with you in my home or outdoors? </p><br>
-                    <p>No, nearly all of my in-home clients have little or no equipment at all and get amazing results. Unless you are into power-lifting, bodybuilding, or competitive sports you do not need lots of machines - all you need is to work the muscles. This is possible with body weight calisthenics, exercise bands, free weights, manual resistance, exercise balls, etc.</p>
-
-                    <p>What will my custom fitness plan include?</p><br>
-                    <p>I develop a customized strength, flexibility, cardio, and nutrition plan for you based on you, your goals, your time available to exercise, your current fitness level, etc.</p>
-
-                    <p>How fast will I achieve my goals and see results?</p><br>
-                    <p>The more frequently you meet with me the faster you will see results and achieve your goals. There are several reasons for this; working with me will provide consistency, accountability, motivation, and guidance. You will find you will have all of these things when you work with me as opposed to working on your own.</p>
-                    <p>It takes from 6 months to 8 months to see significant results in the body according to the National Academy of Sports Medicine (nasm.org). If you train at least twice a week with me, add one more training session by yourself weekly and eat healthy – you will notice a drop in weight and clothes size.</p>
-
-                    <p>How much do you charge?</p><br>
-                    <p>I sell packages or we can go from session to session pay rate. A package of 10 sessions – $450. Paying each time – $ 50 – one hour at your location, price depends on a travelling distance. Please call to discuss that.</p>
-
-                    <p>May I train with a friend or a partner?</p><br>
-                    <p>Yes. It is more fun and more affordable for both of you.</p>
-
-                    <p> Working out this way is somewhat costly. </p><br>
-                    <p>Why should I work with you when I can workout by myself?</p><br>
-                    <p>Consider the price you pay me an investment in your health, the most precious asset you have. Without good health, the quality of your life will be diminished and limited. Working out with my help ensures you will get high quality advice and results. You will like your body more, your self-esteem will increase, and you will start enjoying life more.</p>
-
-                    <p>If I buy a package, will I receive credits for missed sessions?</p><br>
-                    <p> Yes, if you give me enough advance notice. I require at least 1 full business day notice in advance to give credit. For example, if your session is on Monday, you would need to let me know by the previous Thursday that you could not make it. This will give me a full business day (Friday) to schedule another client into your time slot. Your missed session will be rescheduled.</p>
-
-                    <p>I travel a lot. Can you still help me?</p><br>
-                    <p>Certainly. I will create a practical plan for you to keep exercising while you are away based on the activities and location of your temporary location.</p>
-
-                    <p>Why use a certified trainer?</p><br>
+                    <h4>Do I need to have equipment if I am going to be working with you in my home or outdoors?</h4><br>
+                    <p>No, nearly all of my in-home clients have little or no equipment at all and get amazing results. Unless you are into power-lifting, bodybuilding, or competitive sports you do not need lots of machines - all you need is to work the muscles. This is possible with body weight calisthenics, exercise bands, free weights, manual resistance, exercise balls, etc.</p><br>
+                    <h4>What will my custom fitness plan include?</h4><br>
+                    <p>I develop a customized strength, flexibility, cardio, and nutrition plan for you based on you, your goals, your time available to exercise, your current fitness level, etc.</p><br>
+                    <h4>How fast will I achieve my goals and see results?</h4><br>
+                    <p>The more frequently you meet with me the faster you will see results and achieve your goals. There are several reasons for this; working with me will provide consistency, accountability, motivation, and guidance. You will find you will have all of these things when you work with me as opposed to working on your own.
+                        It takes from 6 months to 8 months to see significant results in the body according to the National Academy of Sports Medicine (nasm.org). If you train at least twice a week with me, add one more training session by yourself weekly and eat healthy – you will notice a drop in weight and clothes size.</p><br>
+                    <h4>How much do you charge?</h4><br>
+                    <p>I sell packages or we can go from session to session pay rate. A package of 10 sessions – $40 per hour . Paying each time – $ 60 – one hour at your location, price depends on a travelling distance. Please call to discuss that.</p><br>
+                    <h4>May I train with a friend or a partner?</h4><br>
+                    <p>Yes. It is more fun and more affordable for both of you.</p><br>
+                    <h4>Working out this way is somewhat costly.Why should I work with you when I can workout by myself?</h4><br>
+                    <p>Consider the price you pay me an investment in your health, the most precious asset you have. Without good health, the quality of your life will be diminished and limited. Working out with my help ensures you will get high quality advice and results. You will like your body more, your self-esteem will increase, and you will start enjoying life more.</p><br>
+                    <h4>If I buy a package, will I receive credits for missed sessions?</h4><br>
+                    <p> Yes, if you give me enough advance notice. I require at least 1 full business day notice in advance to give credit. For example, if your session is on Monday, you would need to let me know by the previous Thursday that you could not make it. This will give me a full business day (Friday) to schedule another client into your time slot. Your missed session will be rescheduled.</p><br>
+                    <h4>I travel a lot. Can you still help me?</h4><br>
+                    <p>Certainly. I will create a practical plan for you to keep exercising while you are away based on the activities and location of your temporary location.</p><br>
+                    <h4>Why use a certified trainer?</h4><br>
                     <p>Using a certified trainer assures you will get an educated professional knowledgeable about the proper way to exercise based on your unique needs. Would you seek out medical advice from someone who has not graduated from medical school? Of course not. Your body and health are too important to risk injury by consulting with someone who is untrained nor would you just try to treat yourself. Your optimum life will only happen with optimum health.
-                    </p>
-                    <p> Why should I hire you?</p><br>
+                    </p><br>
+                    <h4>Why should I hire you?</h4><br>
                     <p>Click this link to read all about my qualifications, credentials, licenses, training, and experience:
-                        <a href="http://../russianpersonaltrainer.com/aboutme">Russian Personal Trainer</a></p>
+                        <a href="http://../russianpersonaltrainer.com/aboutme">Russian Personal Trainer</a></p><br>
                 </div>
             </article>
         </main>
         <!--Begin Section-->
         <section class="blueborder">
-
         </section>
-
         <!--End Section-->
-
         <!-- Footer-->
-
         <footer class="footer">
             <p>Copyright &copy; 2019</p>
             <div class="social-media">
@@ -279,9 +246,7 @@
             </div>
         </footer>
     </div>
-
     <!-- End Footer -->
-
     <!--If this code is placed in JS file, the script is executed before the page loads. By placing the script at the bottom of the page, I avioded the problem of it not loading.-->
     <script>
         var modal = document.querySelector(".modal");
@@ -297,11 +262,9 @@
                 toggleModal();
             }
         }
-
         trigger.addEventListener("click", toggleModal);
         closeButton.addEventListener("click", toggleModal);
         window.addEventListener("click", windowOnClick);
     </script>
 </body>
-
 </html>
